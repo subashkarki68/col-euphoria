@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "my-expo-app",
-    "slug": "my-expo-app",
+    "name": "COL Euphoria",
+    "slug": "col-euphoria",
     "version": "1.0.0",
+    "newArchEnabled": true,
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -18,9 +19,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.myexpoapp"

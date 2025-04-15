@@ -1,20 +1,21 @@
 import { useColorScheme } from 'nativewind';
 import { Image, ImageStyle, Switch, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import Icon from 'react-native-vector-icons/AntDesign';
 
 export const Navbar = () => {
   const { colorScheme, toggleColorScheme } = useColorScheme();
+  const imageSource =
+    colorScheme === 'light'
+      ? require('../assets/col-graphics/euphoria-logo-light.png')
+      : require('../assets/col-graphics/euphoria-logo-dark.png');
   return (
-    <SafeAreaView className="bg-red-300 dark:bg-green-600">
-      <View className="px-4">
-        <Image
-          source={require('../assets/col-graphics/euphoria-logo-light.png')}
-          style={imageStyles}
-        />
+    <>
+      <View className="fixed z-50 flex w-full flex-row items-center justify-between px-4 backdrop-blur-md dark:bg-black/30">
+        <Image source={imageSource} style={imageStyles} />
         <Switch value={colorScheme === 'dark'} onValueChange={toggleColorScheme} />
-        <Text>{colorScheme}</Text>
+        <Icon name="bars" color={colorScheme === 'dark' ? 'white' : 'black'} size={32} />
       </View>
-    </SafeAreaView>
+    </>
   );
 };
 
