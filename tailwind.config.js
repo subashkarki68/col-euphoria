@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         //Common
-        'col-secondary': 'EF4444',
+        'col-secondary': '#EF4444',
         // Light Colors
         'col-primary-light': '#FFFFFF',
 

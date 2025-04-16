@@ -1,5 +1,5 @@
 import { useColorScheme } from 'nativewind';
-import { Image, ImageStyle, Switch, Text, View } from 'react-native';
+import { Image, ImageStyle, Switch, View } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 export const Navbar = () => {
@@ -10,7 +10,9 @@ export const Navbar = () => {
       : require('../assets/col-graphics/euphoria-logo-dark.png');
   return (
     <>
-      <View className="fixed z-50 flex w-full flex-row items-center justify-between px-4 backdrop-blur-md dark:bg-black/30">
+      <View
+        style={{ backgroundColor: colorScheme === 'dark' ? 'black' : '#FFF' }}
+        className="z-50 flex w-full flex-row items-center justify-between px-2 pr-4 blur-2xl">
         <Image source={imageSource} style={imageStyles} />
         <Switch value={colorScheme === 'dark'} onValueChange={toggleColorScheme} />
         <Icon name="bars" color={colorScheme === 'dark' ? 'white' : 'black'} size={32} />
