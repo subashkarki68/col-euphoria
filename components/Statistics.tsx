@@ -30,8 +30,8 @@ export const Statistics = () => {
         <View
           className="top-safe absolute right-0 flex w-72 translate-y-10 flex-row items-center gap-4 bg-white p-4 shadow-2xl shadow-slate-900 dark:bg-col-primary-dark"
           style={{ borderTopLeftRadius: 12, borderBottomLeftRadius: 12 }}>
-          <View className="rounded-xl bg-col-secondary/5 p-8">
-            <Icon name="globe-outline" size={24} color="#EF4444" />
+          <View className="rounded-xl bg-col-secondary/5 p-7">
+            <Icon name="globe-outline" size={32} color="#EF4444" />
           </View>
           <View>
             <Text className="text-xl text-slate-400">Travel Packages</Text>
@@ -43,13 +43,13 @@ export const Statistics = () => {
         <View
           className="bottom-safe absolute left-0 flex w-72 -translate-y-10 flex-row items-center gap-4 bg-white p-4 shadow-2xl shadow-slate-900 dark:bg-col-primary-dark"
           style={{ borderTopRightRadius: 12, borderBottomRightRadius: 12 }}>
-          <View className="rounded-xl bg-col-secondary/5 p-8">
-            <Icon name="globe-outline" size={24} color="#EF4444" />
+          <View className="rounded-xl bg-col-secondary/5 p-7">
+            <Icon name="people-outline" size={32} color="#EF4444" />
           </View>
           <View>
             <Text className="text-xl text-slate-400">Visitor</Text>
             <Text className="text-2xl font-semibold text-black dark:text-white">
-              {statistics[0] ? `${statistics[0].numberOfTravelPackages}+` : `0+`}
+              {statistics[0] ? `${statistics[0].numberOfVisitors}` : `0`}
             </Text>
           </View>
         </View>

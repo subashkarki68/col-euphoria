@@ -25,7 +25,7 @@ export const Hero = () => {
           <Card variant={colorScheme} className="my-8 flex flex-col gap-4">
             <Text className="text-black dark:text-white">Search:</Text>
             <View className="flex flex-row items-center border-2 border-gray-400 p-2">
-              <Icon name="magnifying-glass" className="ml-2" size={20} color={'gray'} />
+              <Icon name="magnifying-glass" className="ml-2" size={20} color="gray" />
               <TextInput
                 placeholder="Destination"
                 placeholderTextColor="gray"
