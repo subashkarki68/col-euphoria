@@ -1,10 +1,15 @@
-// server.ts
 import { createServer } from 'miragejs';
+
+import { DESTINATIONS } from './data/destinations/destinations';
+import { STATISTICS } from './data/statistics/statistics';
 
 const server = createServer({
   routes() {
     this.get('/destinations', () => {
-      return [{ id: 1, name: 'Paris', image: 'loading...' }];
+      return DESTINATIONS;
+    });
+    this.get('/statistics', () => {
+      return STATISTICS;
     });
   },
 });
