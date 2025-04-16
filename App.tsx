@@ -1,6 +1,7 @@
 import { Destinations } from 'components/Destinations';
 import { Hero } from 'components/Hero';
 import { Navbar } from 'components/Navbar';
+import { Statistics } from 'components/Statistics';
 import { ScrollView, StatusBar } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
@@ -15,6 +16,7 @@ export default function App() {
           <ScrollView className="min-h-screen">
             <Hero />
             <Destinations />
+            <Statistics />
           </ScrollView>
         </SafeAreaView>
         <StatusBar translucent />
